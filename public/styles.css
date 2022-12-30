@@ -1,0 +1,185 @@
+body{
+    margin-top: 100px;
+
+    display: flex;
+    justify-content: center;
+    padding:5px;
+    background-image: url(Assets/image6.jpg);
+    background-size:150%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.form-box{
+    min-width:400px;
+    min-height: 425px;
+    background-image:url(Assets/image7.jpg);
+    background-size: 175%;
+    box-shadow: 0 0 20px 9px #747474;
+
+}
+
+.heading{
+    font-family: 'Trebuchet MS', sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+label{
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.element{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.fileupload{
+    padding:10px;
+    align-content: center;
+    padding-left: 30px;
+}
+.input{
+    background: transparent;
+    text-align:center;
+
+    border-top:transparent;
+    border-right: transparent;
+    border-left: transparent;
+
+    outline: none;
+    border-color: black;
+    margin-top:5px;
+    margin-left: 10%;
+    margin-right:10%;
+}
+
+.input:active{
+    border-color:aqua;
+}
+.btn{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap:10%;
+
+}
+.btn #login{
+    background: linear-gradient(to left, rgb(0, 229, 255), rgb(179, 241, 64));
+
+    border-color: rgb(65, 57, 57);
+    box-shadow: 0 2px 2px grey;
+    border-radius: 50px;
+    width: 120px;
+    height:50px;
+
+
+    font-size: larger;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+.btn #signup{
+    background: linear-gradient(to left, rgb(119, 255, 0), rgb(255, 208, 0));
+
+    width: 120px;
+    height:50px;
+
+    border-color: rgb(65, 57, 57);
+    box-shadow: 0 2px 2px grey;
+    border-radius: 50px;
+
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size:larger;
+}
+
+
+
+.btn #login:hover{
+    scale:105%;
+}
+.btn #signup:hover{
+    scale:105%;
+}
+
+
+@media(max-width:1200px){
+    body{
+        background-size:200%;
+    }
+    .heading{
+        padding:15px;
+        margin:0px;
+    }
+    .form-box{
+        min-width: 350px;
+        min-height: 350px;
+    }
+    .element{
+        padding:0;
+    }
+    .btn{
+        padding:15px;
+    }
+    .btn #login{
+        height: 40px;
+        width:100px;
+    }
+    .btn #signup{
+        height: 40px;
+        width:100px;
+    }
+    
+}
+
+@media(max-width:900px) {
+    body{
+        background-size: 300%;
+    }
+    .form-box{
+        min-width:300px;
+        min-height:300px;
+    }
+    .input{
+        margin-top:0;
+        margin-left: 15%;
+        margin-right:15%;
+    }
+    .btn{
+        padding:15px;
+    }
+    .btn #login{
+        height: 35px;
+        width:90px;
+    }
+    .btn #signup{
+        height: 35px;
+        width:90px;
+    }
+    
+}
+
+@media(max-width:600px){
+    body{
+        background-size:400%;
+    }
+    .btn{
+        padding:15px;
+    }
+    .btn #login{
+        height: 30px;
+        width:85px;
+        font-size: medium;
+    }
+    .btn #signup{
+        height: 30px;
+        width:85px;
+        font-size: medium;
+
+    }
+}
+
+@media (max-height:600px){
+    body{
+        margin-top: 30px;
+    }
+}
